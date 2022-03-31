@@ -1,3 +1,3 @@
-# Websocket_yugioh
+# Websocket-game
 
-base: https://github.com/rickypeng99/yugioh_web
+
