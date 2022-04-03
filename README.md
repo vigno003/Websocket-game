@@ -1,3 +1,3 @@
-# Websocket-game
+# Websocket-shooter
 
 
