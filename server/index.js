@@ -1,16 +1,19 @@
 const Websocket = require('ws')
 const port=8080;
-const ws= new Websocket.Server({port}, ()=>{
-    console.log('server started')
-})
+const wsServer = new WebSocket.Server({port:PORT})
 
-ws.on('connection',(ws)=>[
-    ws.on('message',(data)=>{
-        console.log('data received:'+data)
-        ws.send(""+data)
+console.log("The server is listening on port " + wsServer.options.port);
+
+wsServer.on('connection', function(connessione,req){
+    var ipClient= req.headers["x-forwarded-for"].split(',')[0];
+    /*console.log(ipClient);
+    console.log(req.socket.remotePort);
+    console.log("si è connesso qualcuno");
+    console.log("porta: "+req.socket.remotePort+" , indirizzo IP: "+ipClient);*/
+  
+    connessione.on('message', function(msg){
+          wsServer.clients.forEach(function (client){
+          client.send(""+msg);
+        })
     })
-])
-
-ws.on('listening', ()=>{
-    console.log('port '+port)
 })
