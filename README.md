@@ -12,7 +12,7 @@
 
 -unity video e node js server e client: https://www.youtube.com/watch?v=13HnJPstnDM
 
--spawn point: https://www.youtube.com/watch?v=MYD-9R52rus
+-spawn point: https://www.youtube.com/watch?v=2X51Od86l9k&ab_channel=BurgZergArcade
 
 -unity keycode: https://docs.unity3d.com/ScriptReference/KeyCode.html
 
