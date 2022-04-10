@@ -1,26 +1,23 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemySpawn : MonoBehaviour
 {
-     public GameObject Enemy;
-     float repeatTime = 3f;
+    public GameObject Enemy;
+    //float repeatTime = 3f;
+    //Random repeateTime = new Random();
 
     private void Start()
     {
-        InvokeRepeating("Spawn", 2f, repeatTime);
+        InvokeRepeating("Spawn", 2f, Random.Range(3f, 10f));
     }
 
     void Spawn()
     {
-        if (Enemy!=null)
+        if (Enemy == null)
         {
-            Instantiate(Enemy, transform.position, Quaternion.identity);
+            return;
         }
-        else
-        {
-            
-        }
+        Instantiate(Enemy, transform.position, Quaternion.identity);              
     }
 }

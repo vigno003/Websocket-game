@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637845880935644413
+      ticks: 637849158900000000
     m_Hash: 728776223
   m_LockFileStatus:
     m_FilePath: C:/Users/aldo/Desktop/Game/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637845881017108084
+      ticks: 637849158900000000
     m_Hash: 2249468046
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
