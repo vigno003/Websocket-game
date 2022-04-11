@@ -37,6 +37,17 @@ public class wsClient : MonoBehaviour
   
   void Update()
   {
+  function sendMesage()
+    {
+        let message = {
+            x:player.x,
+            y:player.y,
+            fire:player.fire
+        }
+        let Jmessage=JSON.stringify(message);
+        connessione.send(Jmessage);
+    }
+  
     if(ws==null)
     {
       return;
