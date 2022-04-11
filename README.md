@@ -17,3 +17,6 @@
 -unity keycode: https://docs.unity3d.com/ScriptReference/KeyCode.html
 
 video unity more client: https://www.youtube.com/watch?v=iBM8Gg_Dzow&ab_channel=Slaymuel
+
+-pssibile soluzione websocket: https://forum.unity.com/threads/unity3d-and-websockets.802698/
+
