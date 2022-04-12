@@ -1,77 +1,41 @@
 using WebSocketSharp;
 using UnityEngine;
+using Ninja.WebSockets;
+using System;
+using System.Net.WebSockets;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
 
 public class wsClient : MonoBehaviour
 {
-  WebSocket ws;
-  void Start()
-  {
-    ws = new WebSocket("URL server");
-    ws.Connect();
-    ws.OnMessage += (sender, e) =>
-    {
-      Debug.Log("Message received from "+((WebSocket)sender).Url + ", Data: " + e.Data);
-      let obj=JSON.parse(e.data);
-    };
-    string dataClient=e.Data;
-    if(dataClient=="w")
-    {
-      Debug.Log("move forward");
-    }
-    else if(dataClient=="a")
-    {
-      Debug.Log("move left");
-    }
-    else if(dataClient=="s")
-    {
-      Debug.Log("move backward");
-    }
-    else if(dataClient=="d")
-    {
-      Debug.Log("move right");
-    }
-    else if(dataClient=="mouse0")
-    {
-      Debug.Log("shoot");
-    }
-  }
+  var factory = new WebSocketClientFactory();
+  WebSocket webSocket = await factory.ConnectAsync(new Uri("wss://example.com"));
   
-  void Update()
+  private async Task Receive(WebSocket webSocket)
   {
-  function sendMesage()
+      var buffer = new ArraySegment<byte>(new byte[1024]);
+      while (true)
     {
-        let message = {
-            x:player.x,
-            y:player.y,
-            fire:player.fire
+        WebSocketReceiveResult result = await webSocket.ReceiveAsync(buffer, CancellationToken.None);
+        switch (result.MessageType)
+        {
+            case WebSocketMessageType.Close:
+                return;
+            case WebSocketMessageType.Text:
+            case WebSocketMessageType.Binary:
+                string value = Encoding.UTF8.GetString(buffer.Array, 0, result.Count);
+                Console.WriteLine(value);
+                break;
         }
-        let Jmessage=JSON.stringify(message);
-        connessione.send(Jmessage);
-    }
-  
-    if(ws==null)
+     }
+   }
+   
+   private async Task Send(WebSocket webSocket)
     {
-      return;
-    }
-    if(Input.GetKeyDown(KeyCode.w))
-    {
-      ws.Send("w");
-    }
-    else if(Input.GetKeyDown(KeyCode.a))
-    {
-      ws.Send("a");
-    }
-    else if(Input.GetKeyDown(KeyCode.s))
-    {
-      ws.Send("s");
-    }
-    else if(Input.GetKeyDown(KeyCode.d))
-    {
-      ws.Send("d");
-    }
-    if(Input.GetKeyDown(KeyCode.Mouse0))
-    {
-      ws.Send("mouse0");
-    }
-  }
+      var array = Encoding.UTF8.GetBytes("Hello World");
+      var buffer = new ArraySegment<byte>(array);
+      await webSocket.SendAsync(buffer, WebSocketMessageType.Text, true, CancellationToken.None);
+    } 
+   
 }
