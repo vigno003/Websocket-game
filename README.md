@@ -20,3 +20,4 @@ video unity more client: https://www.youtube.com/watch?v=iBM8Gg_Dzow&ab_channel=
 
 -possibile soluzione websocket: https://forum.unity.com/threads/unity3d-and-websockets.802698/
 
+- unity e node.js: https://www.youtube.com/watch?v=cec1rn1n4dE&ab_channel=ReddyAlice
