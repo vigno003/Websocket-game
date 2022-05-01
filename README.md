@@ -4,7 +4,7 @@
 
 -Glitch.com server: https://glitch.com/~server-connessione-k
 
--tutoria websocket: https://scripterswar.com/tutorial/nodejs
+-tutorial websocket: https://scripterswar.com/tutorial/nodejs
 
 -node.js: http://www.java2s.com/Open-Source/Javascript_Free_Code/Node.JS/List_of_Free_code_Node_JS.htm
 
@@ -21,3 +21,5 @@ video unity more client: https://www.youtube.com/watch?v=iBM8Gg_Dzow&ab_channel=
 -possibile soluzione websocket: https://forum.unity.com/threads/unity3d-and-websockets.802698/
 
 - unity e node.js: https://www.youtube.com/watch?v=cec1rn1n4dE&ab_channel=ReddyAlice
+
+- Playlist Unity x Node.js: https://www.youtube.com/playlist?list=PLMygHu90DtpHqU0wSZ4yUY8yFe2cI56Ok
