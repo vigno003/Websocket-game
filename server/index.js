@@ -20,6 +20,9 @@ wsServer.on('connection', function(client,req){
     
             console.log("Player Message")
             console.log(dataJSON)
+        
+            wsServer.clients.forEach(function (client){
+            client.send(""+msg);
         })
         
         client.on('close', () => {
