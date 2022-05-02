@@ -29,16 +29,14 @@ wss.on('connection', function connection(client){
 	client.on('message', (data) => {
 		var dataJSON = JSON.parse(data)
 		
-		console.log("Player Message")
-		console.log(dataJSON)
 		
 	})
 
 	//Method notifies when client disconnects
-	client.on('close', () => {
+	/*client.on('close', () => {
 		console.log('This Connection Closed!')
 		console.log("Removing Client: " + client.id)
-	})
+	})*/
 
 })
 
