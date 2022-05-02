@@ -9,6 +9,7 @@ public class SocketManager : MonoBehaviour
     WebSocket socket;
     public GameObject player;
     public PlayerData playerData;
+    int divisore = 1000;
 
     // Start is called before the first frame update
     void Start()
@@ -71,6 +72,8 @@ public class SocketManager : MonoBehaviour
             double timestamp = (System.DateTime.UtcNow - epochStart).TotalSeconds;
             //Debug.Log(timestamp);
             playerData.timestamp = timestamp;
+            playerData.score = (int)playerData.timestamp;
+            playerData.score = playerData.score / divisore;
 
             string playerDataJSON = JsonUtility.ToJson(playerData);
             socket.Send(playerDataJSON);
@@ -81,6 +84,7 @@ public class SocketManager : MonoBehaviour
             string messageJSON = "{\"message\": \"Some Message From Client\"}";
             socket.Send(messageJSON);
         }
+
     }
 
     private void OnDestroy()

@@ -556,7 +556,7 @@ ScriptsOnlyBuild:
     className: Outline
   - hash:
       serializedVersion: 2
-      Hash: 543e44774894f69318092d146e976301
+      Hash: 1200a513071cf6a3b53cd8283e67c558
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SocketManager

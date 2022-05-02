@@ -13,6 +13,7 @@ public class EnemyAttacks : MonoBehaviour
         else if (other.tag=="Bullet")
         {
             Destroy(gameObject);
+            
         }
     }
 }
