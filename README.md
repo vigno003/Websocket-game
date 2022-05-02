@@ -1,5 +1,7 @@
 # Websocket-shooter
 
+A arena game where two player try to survive the infinite orde of enemies, using Unity engine and a websocket server for the connection and the exchange of coordinates.
+
 - video tutorial: https://www.youtube.com/watch?v=TENvDsh5DQs
 - Glitch.com server: https://glitch.com/~server-connessione-k
 - tutorial websocket: https://scripterswar.com/tutorial/nodejs
