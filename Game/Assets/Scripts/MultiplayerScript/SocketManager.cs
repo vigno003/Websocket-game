@@ -14,7 +14,7 @@ public class SocketManager : MonoBehaviour
     void Start()
     {
 
-        socket = new WebSocket("wss://websocket-gameserver.glitch.me/:8080");
+        socket = new WebSocket("ws://websocket-gameserver.glitch.me");
         socket.Connect();
 
         //WebSocket onMessage function

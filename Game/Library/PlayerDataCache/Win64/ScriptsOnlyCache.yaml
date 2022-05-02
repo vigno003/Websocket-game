@@ -61,26 +61,28 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 83
       Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1992}
+      Script: {instanceID: 2000}
     - Class: 114
-      Script: {instanceID: 2346}
+      Script: {instanceID: 2356}
     - Class: 114
-      Script: {instanceID: 3460}
+      Script: {instanceID: 3476}
     - Class: 114
-      Script: {instanceID: 3906}
+      Script: {instanceID: 3924}
     - Class: 114
-      Script: {instanceID: 4220}
+      Script: {instanceID: 4238}
     - Class: 114
-      Script: {instanceID: 4244}
+      Script: {instanceID: 4262}
     - Class: 114
-      Script: {instanceID: 4316}
+      Script: {instanceID: 4334}
     - Class: 114
-      Script: {instanceID: 4376}
+      Script: {instanceID: 4394}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
@@ -110,38 +112,36 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1462}
+      Script: {instanceID: 1470}
     - Class: 114
-      Script: {instanceID: 1744}
+      Script: {instanceID: 1752}
     - Class: 114
-      Script: {instanceID: 2026}
+      Script: {instanceID: 2034}
     - Class: 114
-      Script: {instanceID: 2332}
+      Script: {instanceID: 2342}
     - Class: 114
-      Script: {instanceID: 2450}
+      Script: {instanceID: 2460}
     - Class: 114
-      Script: {instanceID: 2492}
+      Script: {instanceID: 2502}
     - Class: 114
-      Script: {instanceID: 2618}
+      Script: {instanceID: 2628}
     - Class: 114
-      Script: {instanceID: 2804}
+      Script: {instanceID: 2814}
     - Class: 114
-      Script: {instanceID: 2810}
+      Script: {instanceID: 2820}
     - Class: 114
-      Script: {instanceID: 2894}
+      Script: {instanceID: 2908}
     - Class: 114
-      Script: {instanceID: 3748}
+      Script: {instanceID: 3764}
     - Class: 114
-      Script: {instanceID: 3860}
+      Script: {instanceID: 3878}
     - Class: 114
-      Script: {instanceID: 4130}
+      Script: {instanceID: 4148}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -187,28 +187,30 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 83
       Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1992}
+      Script: {instanceID: 2000}
     - Class: 114
-      Script: {instanceID: 2346}
+      Script: {instanceID: 2356}
     - Class: 114
-      Script: {instanceID: 3460}
+      Script: {instanceID: 3140}
     - Class: 114
-      Script: {instanceID: 3906}
+      Script: {instanceID: 3476}
     - Class: 114
-      Script: {instanceID: 4220}
+      Script: {instanceID: 3924}
     - Class: 114
-      Script: {instanceID: 4244}
+      Script: {instanceID: 4238}
     - Class: 114
-      Script: {instanceID: 4316}
+      Script: {instanceID: 4262}
     - Class: 114
-      Script: {instanceID: 4376}
+      Script: {instanceID: 4334}
     - Class: 114
-      Script: {instanceID: 16320}
+      Script: {instanceID: 4394}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
@@ -552,6 +554,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Outline
+  - hash:
+      serializedVersion: 2
+      Hash: 543e44774894f69318092d146e976301
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SocketManager
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -900,12 +908,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: TMP_TextEventCheck
-  - hash:
-      serializedVersion: 2
-      Hash: 543e44774894f69318092d146e976301
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SocketManager
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
